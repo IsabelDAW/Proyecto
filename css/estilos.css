@@ -1,0 +1,127 @@
+/*ID utilizadas por Isabel = ESLOGAN - LOGIN - CARRITO - INICIO*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: blue;
+    color: whitesmoke;
+    width: 100%;
+	height: 100PX;
+}
+.ancho{
+    width: 95%;
+    height: 100px;
+    margin: center;
+}
+.logo{
+    margin-left:100px;
+    width: 30%;
+    height: 25px;
+    text-align: center;
+    font-size: 50px;
+    font-family: rale;
+}
+@font-face {
+    font-family: rale;
+    src: url(./fonts/Raleway-Bold.ttf);
+}
+
+#eslogan{
+    margin-left: 45%;
+    font-size: 30px;
+}
+#login{
+    float:right;
+    margin-right: 0px;
+}
+#carrito{
+    float:right;
+    margin-right: 40px;
+    margin-top:4px;
+
+
+}
+#inicio{
+    float:right;
+    margin-right: 30px;
+    margin-top:3px;
+    height: 50px;
+}
+/* menu */
+#menu ul{
+    list-style: none;
+    margin-left: 30px;
+    padding: 0px;
+}
+
+/* enlaces del menu */
+
+#menu ul a{
+display: block;
+color: whitesmoke;
+text-decoration: none;
+font-weight: 400px;
+font-size: 15px;
+padding: 10px;
+font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+margin-left: 20px;
+}
+
+/* items del menu */
+
+#menu ul li a:hover{
+    background: darkblue;
+}
+/*menu desplegable */
+#menu ul ul{
+    top:100%;
+    left:0;
+    padding: 0;
+}
+
+#menu ul ul li {
+    float: none;
+    width: 150px;
+    margin-top: 50px;
+}
+#menu ul ul a {
+    line-height:120%;
+    padding:10px 15px;
+   }
+ #menu ul li:hover {
+    display:block;
+   }
+/*Para desplegar el menu*/
+#menu:hover #menu-content{
+display:block;
+
+}
+.desplegar{
+    position: relative;
+    display: inline-block;
+
+}
+.desplegar-content{
+    display: none;
+    position: absolute;
+
+}
+.desplegar:hover .desplegar-content {
+    display: block;
+    background-color: blue;
+
+}
+
+.desplegar:hover .desplegar {
+    background-color: #3e8e41;
+}
+.lateral{
+    background-color: blue;
+    height: 100%;
+    width: 70px;
+    position: fixed;
+    margin:0px
+}
+
+/*******************************Hasta aquí codigo de Isabel *************************************************************************************/
