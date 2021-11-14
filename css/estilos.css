@@ -150,47 +150,70 @@ hr{
     height: 700px;
 }
 .novedades{
-    margin-left:130px;
-    width: 90%;
-    margin-top: 50px;
+    margin-left:100px;
+    padding: 100px;
+    margin-top: 30px;
+    margin-right: 150px;
+    width: 50%;
 }
 
-.servicios{
-    font-size: 50px;
-    margin-left: 5%;
+table{
+width: 100%;    
 }
+
+    .servicios{
+    width: 100%;
+    font-size: 50px;
+    margin-left: 0%;
+    margin-top:30px;
+    margin-bottom: 20px;
+    height: 800px;
+}
+
 
 .servicios1{
+    margin-left: 100px;
+    width: 40%;
     float:left;
     background-color:gainsboro;
     border: 2px solid rgb(9, 66, 147);
+    padding: 20px;
     border-radius: 20px; 
+    height: 800px;
+    line-height: 150%;
 }
+
 .servicios2{
     float:right;
+    width: 40%;
+
     background-color: gainsboro;
     border: 2px solid rgb(9, 66, 147);
+    padding: 20px;
     border-radius: 20px; 
+    height: 800px;
+    line-height: 150%;
+
+
 
 }
 /*formularios*/
 .formulario{
-margin-top: 20%;
+margin-top: 5%;
 margin-left: 5%;
 height: 50%;
-width: 40%;
+width: 43%;
 background-color: gainsboro;
-
 }
 .textoFormulario{
     font-size: 30px;
 }
 form{
     padding:20px;
-    padding-left: 100px;
-     height: 100%;
-     width: 100%;
-     line-height: 550%;
+    padding-left: 50px;
+    height: 100%;
+    width: 100%;
+    line-height: 550%;
 
 }
 label{
@@ -198,56 +221,87 @@ label{
 }
 /*Mapa*/
 .mapa{
-    margin-top: 0%;
-    margin-left: 60%;
-    margin-bottom: 10px;
+float:right;
+margin-top: 0%;
+height: 40%;
+width: 43%;
 }
 .condiciones{
     margin-top: 30px;
     margin-left: 0%;
-    margin-bottom: 10px;
-
-
+    margin-bottom: 30px;
+    width: 100%;
 }
 .condiciones1{
-    padding-left:50px;
     float:left;
     width: 40%;
-    height: 500px;
+    height: 30%;
+    padding-left:0px;
     margin-left: 5%;
-    font-size: 40px;
-    line-height: 250%;
+    font-size: 30px;
+    /*line-height: 250%;*/
     color:whitesmoke;
-    background-color: black;
-
-
+   /* background-color: rgb(75, 72, 72);
     border-radius: 5px;
     border: 2px solid blue;
-    border-radius: 5px; 
-
-
+    border-radius: 5px; */
 }
+
+.condiciones1 a{
+    color: whitesmoke;
+}
+
 .condiciones2{
-    float: right;
-    width: 50%;
-    margin-bottom: 10px;
+
+    padding: 0px; 
+    margin: 5%; 
+    border: 2px solid black; 
+    float: left; 
+    width: 40%;
+   /* float: right;
+   /* width: 40%;
+    height: 20%;
+    margin-bottom: 50px;*/
+   /* width: 40%;
+    height: 30%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    font-size: 40px;*/
 
 
 }
 
 footer{
     width: 100%;
-    margin:0px, 0px;
+    bottom: 0%;
+   /* position: fixed;
+    height: 10%;*/
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
     background-color: rgb(9, 66, 147);
-    color: whitesmoke;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .pie{
-    margin-left: 40%;
-    margin-top: 20%;
-    padding: 100px;
+    padding: 50px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+    text-align:center;
+
+
 }
 
+.imgFooter{
+    float: right;
+    margin-top: 0px;
+    margin-right: 50px;
+}
+.instagram{
+    height: 47px;
+}
 
 /*******************************Hasta aquí codigo de Isabel *************************************************************************************/
