@@ -18,14 +18,11 @@
         <div class="containerHeaderStart ">
             <div class="titulo margenes "><h1>ESIS</h1></div>
             <div class="titulo margenes"><h1>Tu tienda el&eacutectronica de confianza</h1></div>
-        </div>
+            <div class="home"> <a href=" "><img src="imagenes/home.png"></a></div>
+              </div>
         <div class="containerHeaderCenter">
-            <div class=""> <a href=" "><img src="imagenes/home.png"></a></div>
-        </div>
-
-        <div class="containerHeaderEnd">
-            <div class=""><a href=""><img  src="imagenes/carrito.png"></a></div>
-            <div class=""><a href=""> <img src="imagenes/login.png"></a></div>
+            <div class="margenes"><a href=""><img  src="imagenes/carrito.png"></a></div>
+            <div class="margenes"><a href=""> <img src="imagenes/login.png"></a></div>
         </div>
 
     </header>
@@ -51,15 +48,16 @@
     <div id="contenidoCentro">
         <div id="contenido1"></div>
         <div id="contenido2">
-            <figure>
-                <img id="imgPortada" src="./imagenes/portada.jpg">
-                <img id="patinete" src="IMAGENES/patinetes.jpg">
-            </figure>
-            <main>
+
+            <div>
+                <img id="imgPortada" src="IMAGENES/dispositivos_electronicos_1600x900.jpg">
+
+            </div>
+            <div>
                 <div class="titulo">
                     <h1>NOVEDADES</h1>
                 </div>
-                <table>
+                <table class="tablas">
                     <td><a href=""><img class="novedades" src="./IMAGENES/lentes.PNG"></a></td>
                     </a>
                     <td><a href=""><img class="novedades" src="./IMAGENES/raton.PNG"></a></td>
@@ -69,175 +67,107 @@
                     <td><a href=""><img class="novedades" src="./IMAGENES/reloj.PNG"></a></td>
                     </a>
                 </table>
+                <div class="titulo">
+                    <h1>OFERTAS</h1>
+                    <img id="patinete" src="IMAGENES/patinetes.jpg">
+                </div>
 
-            </main>
+            </div>
+            <div class="titulo">
+                <h1>GALERIA</h1>
+            </div>
+            <div class="video">
+                <iframe  width="420" height="315"
+                         src="https://www.youtube.com/embed/HBXRr98yBro">
+
+                </iframe>
+                <iframe width="420" height="315"
+                        src="https://www.youtube.com/embed/eAmy8C85HLc">
+
+                </iframe>
+                <iframe width="420" height="315"
+                        src="https://www.youtube.com/embed/Zu-IkoIrewM">
+
+                </iframe>
+
+                <iframe  width="420" height="315"
+                        src="https://www.youtube.com/embed/nMxM_vQ5sEM">
+
+                </iframe>
+            </div>
             <article class="servicios">
-                    <p class="servicios1">SERVICIOS</br>
+                <div class="servicios1">
+                    <p >SERVICIOS</br>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         <br> Quas aliquam sint cumque commodi esse quidem numquam<br>
                         repudiandae ipsum perspiciatis doloremque consectetur aut,<br>
                         nulla corrupti necessitatibus animi quia nam nostrum tu?<br>
                         Lorem, ipsum dolor sit amet consectetur<br></p>
-
-                    <p class="servicios2">SERVICIOS</br>
+                </div>
+                <div class="servicios2">
+                    <p >SERVICIOS</br>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         <br> Quas aliquam sint cumque commodi esse quidem numquam<br>
                         repudiandae ipsum perspiciatis doloremque consectetur aut,<br>
                         nulla corrupti necessitatibus animi quia nam nostrum tu?<br>
                         Lorem, ipsum dolor sit amet consectetur<br></p>
-
+                </div>
                 </article>
+            <div class="formulario">
+                    <form action="" method="POST">
+                        <div class="formulario1">
+                            <p class=textoFormulario>¿Qué no tenemos lo que buscas?? Rellena el formulario<br>
+                                y si está en nuestra mano conseguirlo en menos de 48h<br> nos pondremos en contacto contigo</p>
+                            <p><label>Nombre</label><input type="text" name="nombre">
+                                <label>Apellidos</label><input type="text" name="apellidos"></p>
+
+                            <p><label>Teléfono</label><input type="text" name="telefono">
+                                <label>Código Postal</label><input type="text" name="codigoPostal"></p>
+                            <p><textarea type="textArea" name="area" cols="50" rows="5"></textarea></p>
+                            <input style="background-color: rgb(9, 66, 147); margin-bottom: 10px" type="submit" value="Enviar formulario" />
+
+                        </div>
+                    </form>
+            </div>
+            <div class="titulo">
+                <h1>DIRECI&OacuteN</h1>
+            </div>
+            <div class="mapa">
+
+                        <iframe  id="ifr"
+                                 src="https://maps.google.com/maps?q=plaza%20espa%C3%B1a%20valencia&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <br><a href="https://www.embedgooglemap.net"></a>
+                        <img id="map" src="./IMAGENES/ssl.jpg">
+                </div>
+            </div>
         </div>
+
 
     </div>
 
 
 </div>
-<footer>
-    <article class="condiciones">
-        <p class="condiciones1">
+<footer class="foo">
+    <div class="condiciones">
+        <div class="condiciones1">
             CONDICIONES DE COMPRA<br>
             Ofrecemos las mejores garantias de
             compra:<br>
             <a href="">Politica de envío y devolución.</a></br>
                 <a href="">Politica de privacidad.</a></br>
                     <a href="">Politica de cookies</a></br>
-        </p>
-    </article>
-    <div style="display: flex;flex-direction: column;align-items: center">
-        <p class="pie">Copyright &copy; ESIS, todos los derechos reservados.</p>
-        <aside class="imgFooter">
-            <a hrf=""><img class="twiter" src="./IMAGENES/twiter.png"></a>
-            <a hrf=""><img class="facebook" src="./IMAGENES/facebook.png"></a>
-            <a hrf=""><img class="instagram" src="./IMAGENES/instagram.png"></a>
-        </aside>
+        </div>
+        <div class="condiciones2">
+            <p class="pie">Copyright &copy; ESIS, todos los derechos reservados.</p>
+            <div class="imgFooter">
+                <a href="www.twiter.com"><img class="img" src="./IMAGENES/twiter.png"></a>
+                <a href="www.facebook.com"><img class="img" src="./IMAGENES/facebook.png"></a>
+                <a href="www.instagram.com"><img class="img" src="./IMAGENES/instagram.png"></a>
+            </div>
+        </div>
     </div>
-
 </footer>
-<!--<header>-->
-<!--    <div class="ancho">-->
-<!--        <div class="logo">-->
-<!--            <p>ESIS</p>-->
-<!--        </div>-->
-<!--        <q id="eslogan">Tu tienda el&eacutectronica de confianza</q>-->
-<!--        <a href=""> <img id="login" src="imagenes/login.png"></a>-->
-<!--        <a href=""><img id="carrito" src="imagenes/carrito.png"></a>-->
-<!--        <a href=" "><img id="inicio" src="imagenes/home.png"></a>-->
-<!--        <hr></hr>-->
 
-<!--        <nav id="menu">-->
-<!--            <ul>-->
-<!--                <div class="desplegar">-->
-
-<!--                    <li id="desplegar"><a href="">MENU</a></li>-->
-<!--                    <ul>-->
-<!--                        <div class="desplegar-content">-->
-
-<!--                            <li><a href="">PRODUCTOS</a></li>-->
-<!--                            <li><a href="">OFERTAS</a></li>-->
-<!--                            <li><a href="">CENTRO DE AYUDA</a></li>-->
-<!--                            <li><a href="">NOSOTROS</a></li>-->
-<!--                            <li><a href="">CONTACTO</a></li>-->
-<!--                        </div>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--            </ul>-->
-<!--        </nav>-->
-<!--    </div>-->
-<!--</header>-->
-<!--<aside class="lateral">-->
-<!--</aside>-->
-
-<!--<figure>-->
-<!--    <img id="imgPortada" src="./imagenes/portada.jpg">-->
-<!--    <img id="patinete" src="IMAGENES/patinetes.jpg">-->
-<!--</figure>-->
-
-<!--<aside class="lateral">-->
-<!--</aside>-->
-
-<!--<main>-->
-<!--    <table>-->
-<!--        <td><a href=""><img class="novedades" src="./IMAGENES/lentes.PNG"></a></td>-->
-<!--        </a>-->
-<!--        <td><a href=""><img class="novedades" src="./IMAGENES/raton.PNG"></a></td>-->
-<!--        </a>-->
-<!--        <td><a href=""><img class="novedades" src="./IMAGENES/casco.PNG"></a></td>-->
-<!--        </a>-->
-<!--        <td><a href=""><img class="novedades" src="./IMAGENES/reloj.PNG"></a></td>-->
-<!--        </a>-->
-<!--    </table>-->
-
-<!--</main>-->
-
-<!--<aside class="lateral">-->
-<!--</aside>-->
-
-<!--<aside class="lateral">-->
-<!--</aside>-->
-
-<!--<aside class="lateral">-->
-<!--</aside>-->
-<!--<article class="servicios">-->
-
-<!--    <p class="servicios1">SERVICIOS</br>-->
-<!--        Lorem, ipsum dolor sit amet consectetur adipisicing elit.-->
-<!--        <br> Quas aliquam sint cumque commodi esse quidem numquam<br>-->
-<!--        repudiandae ipsum perspiciatis doloremque consectetur aut,<br>-->
-<!--        nulla corrupti necessitatibus animi quia nam nostrum tu?<br>-->
-<!--        Lorem, ipsum dolor sit amet consectetur<br></p>-->
-
-<!--    <p class="servicios2">SERVICIOS</br>-->
-<!--        Lorem, ipsum dolor sit amet consectetur adipisicing elit.-->
-<!--        <br> Quas aliquam sint cumque commodi esse quidem numquam<br>-->
-<!--        repudiandae ipsum perspiciatis doloremque consectetur aut,<br>-->
-<!--        nulla corrupti necessitatibus animi quia nam nostrum tu?<br>-->
-<!--        Lorem, ipsum dolor sit amet consectetur<br></p>-->
-
-<!--</article>-->
-<!--<aside class="lateral">-->
-<!--</aside>-->
-<!--<aside class="lateral">-->
-<!--</aside>-->
-<!--<article class="formulario">-->
-<!--    <form action="" method="POST">-->
-<!--        <p class=textoFormulario>¿Qué no tenemos lo que buscas?? Rellena el formulario<br>-->
-<!--            y si está en nuestra mano conseguirlo en menos de 48h<br> nos pondremos en contacto contigo</p>-->
-<!--        <p><label>Nombre</label><input type="text" name="nombre">-->
-<!--            <label>Apellidos</label><input type="text" name="apellidos"></p>-->
-
-<!--        <p><label>Teléfono</label><input type="text" name="telefono">-->
-<!--            <label>Código Postal</label><input type="text" name="codigoPostal"></p>-->
-<!--        <p><textarea type="textArea" name="area" cols="100" rows="5"></textarea></p>-->
-<!--    </form>-->
-
-<!--</article>-->
-
-
-<!--<img class="condiciones2" src="./IMAGENES/PAGO.PNG">-->
-<!--<article class="mapa">-->
-<!--    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.1249042019635!2d-0.548717685135937!3d39.489094119454776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa12704a9c0cfef57!2zMznCsDI5JzIwLjciTiAwwrAzMic0Ny41Ilc!5e0!3m2!1ses!2ses!4v1636705030734!5m2!1ses!2ses"-->
-<!--            width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>-->
-<!--</article>-->
-
-<!--<footer>-->
-<!--    <article class="condiciones">-->
-<!--        <p class="condiciones1">-->
-<!--            CONDICIONES DE COMPRA<br>-->
-<!--            Ofrecemos las mejores garantias de-->
-<!--            compra:<br>-->
-<!--            <a href="">Politica de envío y devolución.</a></br>-->
-<!--                <a href="">Politica de privacidad.</a></br>-->
-<!--                    <a href="">Politica de cookies</a></br>-->
-<!--        </p>-->
-<!--    </article>-->
-<!--    <p class="pie">Copyright &copy; ESIS, todos los derechos reservados.</p>-->
-<!--    <aside class="imgFooter">-->
-<!--        <a hrf=""><img class="twiter" src="./IMAGENES/twiter.png"></a>-->
-<!--        <a hrf=""><img class="facebook" src="./IMAGENES/facebook.png"></a>-->
-<!--        <a hrf=""><img class="instagram" src="./IMAGENES/instagram.png"></a>-->
-<!--    </aside>-->
-<!--</footer>-->
 </body>
 
 

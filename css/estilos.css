@@ -2,52 +2,56 @@
 
 /*ID utilizadas por Isabel = ESLOGAN - LOGIN - CARRITO - INICIO*/
 
-
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: Calibri;
+@font-face {
+    font-family: "Raleway";
+    src: local("./fonts");
+}
+body{
+    margin: 0;
+    padding: 0;
 }
 .container{
     min-height:100vh;/*importante*/
     position:relative;/*importante*/
-    border:2px solid blue;
     background-color: rgb(9, 66, 147);
     width: 100%;
     height: 100%;
-    margin: auto;
+
+
 }
 .header{
     display: flex;
     background-color: rgb(9, 66, 147);
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 .containerHeaderStart{
     width: 80%;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     text-align: center;
+    justify-content: space-around;
+    align-items: center;
 }
 .containerHeaderCenter{
-    width: 10%;
+    width: 20%;
+    flex-direction: row;
     display: flex;
+    justify-content: end;
     align-items: center;
-    justify-content: center;
-    float: right;
-
+    padding: 20px;
 }
-.containerHeaderEnd{
-    width: 10%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
+/*.containerHeaderEnd{*/
+/*    width: 10%;*/
+/*    display: flex;*/
+/*    justify-content: flex-end;*/
+/*    align-items: center;*/
+/*}*/
 
 .footer{
     background-color: rgb(9, 66, 147);
     width: 100%;
-    height: 1em
-;
     text-align: center;
 
 }
@@ -60,7 +64,7 @@
     background-color: rgb(9, 66, 147);
 }
 #contenido2{
-    background-color: lightslategray;
+    background-color: darkseagreen;
     width: 90%;
     padding: 1%;
 }
@@ -68,7 +72,7 @@
 /*Cambios en las imagenes imagenes*/
 #imgPortada{
     width: 100%;
-    height: 400px;
+    height: 500px;
 }
 
 #patinete{
@@ -82,24 +86,74 @@
     font-size: 150%;
 }
 .margenes{
-    margin-left: 5%;
+    margin-left: 4%;
 }
 .end{
     float: right;
 }
 /*cambios en las tablas*/
-table{
+.tablas{
     width: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .novedades{
-    width: 80%;
-    border: solid red;
+    width: 90%;
     height: 350px;
 
+}
+.formulario{
 
+    display: flex;
+    border: solid rgb(9, 66, 147);
+    justify-content: center;
+    font-size: large;
+    font-family: "Arial Black";
+    color: rgb(9, 66, 147);
+    margin-bottom: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.formulario1{
 
 }
+.mapa{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.mapa img{
+    width: 50%;
+}
+.mapa iframe{
+    width: 50%;
+}
+/*.mapaIframe, .imgMapa{*/
+/*    margin: 5px;*/
+
+/*}*/
+/*.mapaIframe #ifr, .imgMapa #map{*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*}*/
+/*.mapaIframe #ifr{*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*}*/
+.video{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+}
+
 
 
 
@@ -109,7 +163,7 @@ table{
 #menu ul{
     list-style: none;
     margin-left: 35px;
-    padding: 0px;
+    padding: 0;
 }
 
 /* enlaces del menu */
@@ -175,401 +229,68 @@ display:block;
 }
 
 .servicios {
+    width: 100%;
     display: flex;
-    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-bottom: 10%;
+    justify-content: space-around;
 }
 /* Esteban--> modifique aqui un poco*/
 .servicios1{
-    width: 50%;
+    width: 30%;
     background-color:gainsboro;
     border: 2px solid rgb(9, 66, 147);
     padding: 20px;
     border-radius: 20px;
     height: 200px;
     line-height: 150%;
+    height: 100%;
 }
 
 .servicios2 {
-    width: 50%;
+    width: 30%;
     background-color: gainsboro;
     border: 2px solid rgb(9, 66, 147);
     padding: 20px;
     border-radius: 20px;
-    height: 200px;
+    height: 100%;
     line-height: 150%;
+
 }
 .condiciones{
-    margin-top: 30px;
-    margin-left: 0;
-    margin-bottom: 30px;
-    width: 100%;
-}
-.condiciones1{
-    float:left;
-    width: 50%;
-    padding-left:0px;
-    margin-left: 10%;
-    font-size: 20px;
-    /*line-height: 250%;*/
-    color:whitesmoke;
-   /* background-color: rgb(75, 72, 72);
-    border-radius: 5px;
-    border: 2px solid blue;
-    border-radius: 5px; */
+    background: rgb(9, 66, 147);
+   display: flex;
+    justify-content: center;
+    font-size: large;
+    font-family: "Arial Black";
+
+
 }
 
+.condiciones1{
+    margin-left: 10%;
+    color: whitesmoke;
+}
 .condiciones1 a{
     color: whitesmoke;
 }
 
 .condiciones2{
-    margin: 5%;
-    border: 2px solid black;
-    float: left;
-    width: 30%;
-   /* float: right;
-   /* width: 40%;
-    height: 20%;
-    margin-bottom: 50px;*/
-   /* width: 40%;
-    height: 30%;
-    margin-left: 0%;
-    margin-bottom: 0%;
-    font-size: 40px;*/
-
-
-}
-footer {
-    position: relative;
-    /* Altura total del footer en px con valor negativo */
-    margin-top: -50px;
-    height: 200px;
-    padding:5px 0px;
-    clear: both;
-    background-color: rgb(9, 66, 147);
-   /* text-align: center;*/
-    color: #fff;
-}
-
-.pie{
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
     color: whitesmoke;
-    font-size:50px;
-    text-align:center;
-
 }
 
 .imgFooter{
-    float: right;
-    margin-top: 0px;
-    margin-right: 50px;
+    display: flex;
+    align-items: center;
 }
-.instagram{
-    height: 47px;
-}
+
 /*********************************
  ESTEBAN -->  EL CODIGO ESTA COMENTADO POR LOS CAMBIOS QUE HICE Y CAMBIA ALGUNAS CLASES E IDS
  AL FINAL SE BORRARA PARA TENER MAS LIMPIO EL CODIGO
  ******************************/
-/*header{*/
-/*    background-color: rgb(9, 66, 147);*/
-/*    color: whitesmoke;*/
-/*   !* width: 100%;*!*/
-/*    width:auto;*/
-/*	height: 200PX;*/
-/*}*/
-/*.ancho{*/
-/*    width: 100%;*/
-/*    height: 200px;*/
-/*    margin: 0;*/
-/*}*/
-/*.logo{*/
-/*    margin-left:50px;*/
-/*    !*width: 30%;*!*/
-/*    width: 100px;*/
-/*    height: 25px;*/
-/*    text-align: center;*/
-/*    font-size: 50px;*/
-/*    font-family: rale;*/
-/*}*/
-/*@font-face {*/
-/*    font-family: rale;*/
-/*    src: url(./fonts/Raleway-Bold.ttf);*/
-/*}*/
-
-/*#eslogan{*/
-/*    !*margin-left: 35%;*!*/
-/*    margin-left: 800px;*/
-/*    font-size: 50px;*/
-/*}*/
-/*#login{*/
-/*    float:right;*/
-/*    margin-right: 30px;*/
-/*}*/
-/*#carrito{*/
-/*    float:right;*/
-/*    margin-right: 40px;*/
-/*    margin-top:4px;*/
-
-
-/*}*/
-/*#inicio{*/
-/*    float:right;*/
-/*    margin-right: 30px;*/
-/*    margin-top:3px;*/
-/*    height: 50px;*/
-/*}*/
-/*!* menu *!*/
-/*#menu ul{*/
-/*    list-style: none;*/
-/*    margin-left: 30px;*/
-/*    padding: 0px;*/
-/*}*/
-
-/*!* enlaces del menu *!*/
-
-/*#menu ul a{*/
-/*display: block;*/
-/*color: whitesmoke;*/
-/*text-decoration: none;*/
-/*font-size: 30px;*/
-/*padding: 10px;*/
-/*font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-/*margin-left: 20px;*/
-/*}*/
-
-/*!* items del menu *!*/
-
-/*#menu ul li a:hover{*/
-/*    background: darkblue;*/
-/*}*/
-/*!*menu desplegable *!*/
-/*#menu ul ul{*/
-/*    top:100%;*/
-/*    left:0;*/
-/*    padding: 0;*/
-/*}*/
-
-/*#menu ul ul li {*/
-/*    float: none;*/
-/*    width: 240px;*/
-/*    margin-top: 50px;*/
-/*}*/
-/*#menu ul ul a {*/
-/*    line-height:120%;*/
-/*    padding:10px 15px;*/
-/*   }*/
-/* #menu ul li:hover {*/
-/*    display:block;*/
-/*   }*/
-/*!*Para desplegar el menu*!*/
-/*#menu:hover #menu-content{*/
-/*display:block;*/
-
-/*}*/
-/*.desplegar{*/
-/*    position: relative;*/
-/*    display: inline-block;*/
-
-/*}*/
-/*.desplegar-content{*/
-/*    display: none;*/
-/*    position: absolute;*/
-
-/*}*/
-/*.desplegar:hover .desplegar-content {*/
-/*    display: block;*/
-/*    background-color: rgb(9, 66, 147);*/
-
-/*}*/
-
-/*.desplegar:hover .desplegar {*/
-/*    background-color: #3e8e41;*/
-/*}*/
-/*.lateral{*/
-/*    height: 100%;*/
-/*    width: 70px;*/
-/*    position: absolute;*/
-/*    margin:0px;*/
-/*    background-color: rgb(9, 66, 147);*/
-/*}*/
-
-/*!*linea vertical header *!*/
-/*hr{*/
-/*    background-color: lightslategray;*/
-/*    margin-top: 30px;*/
-/*    margin-right: 0px;*/
-/*    padding-left: 0px;*/
-/*}*/
-
-/*#imgPortada{*/
-/*    margin-left: 70px;*/
-/*    width: 50%;*/
-/*    height: 700px;*/
-/*}*/
-
-/*#patinete{*/
-/*    margin-left: 25px;*/
-/*    margin-right: 0px;*/
-/*    padding: 0;*/
-/*    width: 45%;*/
-/*    height: 700px;*/
-/*}*/
-/*.novedades{*/
-/*    margin-left:100px;*/
-/*    padding: 100px;*/
-/*    margin-top: 30px;*/
-/*    margin-right: 150px;*/
-/*    width: 50%;*/
-/*}*/
-
-/*table{*/
-/*width: 100%;    */
-/*}*/
-
-/*    .servicios{*/
-/*    width: 100%;*/
-/*    font-size: 50px;*/
-/*    margin-left: 0%;*/
-/*    margin-top:30px;*/
-/*    margin-bottom: 20px;*/
-/*    height: 800px;*/
-/*}*/
-
-
-/*.servicios1{*/
-/*    margin-left: 100px;*/
-/*    width: 40%;*/
-/*    float:left;*/
-/*    background-color:gainsboro;*/
-/*    border: 2px solid rgb(9, 66, 147);*/
-/*    padding: 20px;*/
-/*    border-radius: 20px; */
-/*    height: 800px;*/
-/*    line-height: 150%;*/
-/*}*/
-
-/*.servicios2{*/
-/*    float:right;*/
-/*    width: 40%;*/
-
-/*    background-color: gainsboro;*/
-/*    border: 2px solid rgb(9, 66, 147);*/
-/*    padding: 20px;*/
-/*    border-radius: 20px; */
-/*    height: 800px;*/
-/*    line-height: 150%;*/
-
-
-
-/*}*/
-/*!*formularios*!*/
-/*.formulario{*/
-/*margin-top: 5%;*/
-/*margin-left: 5%;*/
-/*height: 50%;*/
-/*width: 43%;*/
-/*background-color: gainsboro;*/
-/*}*/
-/*.textoFormulario{*/
-/*    font-size: 30px;*/
-/*}*/
-/*form{*/
-/*    padding:20px;*/
-/*    padding-left: 50px;*/
-/*    height: 100%;*/
-/*    width: 100%;*/
-/*    line-height: 550%;*/
-
-/*}*/
-/*label{*/
-/*    font-size: 30px;*/
-/*}*/
-/*!*Mapa*!*/
-/*.mapa{*/
-/*float:right;*/
-/*margin-top: 0%;*/
-/*height: 40%;*/
-/*width: 43%;*/
-/*}*/
-/*.condiciones{*/
-/*    margin-top: 30px;*/
-/*    margin-left: 0%;*/
-/*    margin-bottom: 30px;*/
-/*    width: 100%;*/
-/*}*/
-/*.condiciones1{*/
-/*    float:left;*/
-/*    width: 40%;*/
-/*    height: 30%;*/
-/*    padding-left:0px;*/
-/*    margin-left: 5%;*/
-/*    font-size: 30px;*/
-/*    !*line-height: 250%;*!*/
-/*    color:whitesmoke;*/
-/*   !* background-color: rgb(75, 72, 72);*/
-/*    border-radius: 5px;*/
-/*    border: 2px solid blue;*/
-/*    border-radius: 5px; *!*/
-/*}*/
-
-/*.condiciones1 a{*/
-/*    color: whitesmoke;*/
-/*}*/
-
-/*.condiciones2{*/
-
-/*    padding: 0px; */
-/*    margin: 5%; */
-/*    border: 2px solid black; */
-/*    float: left; */
-/*    width: 40%;*/
-/*   !* float: right;*/
-/*   !* width: 40%;*/
-/*    height: 20%;*/
-/*    margin-bottom: 50px;*!*/
-/*   !* width: 40%;*/
-/*    height: 30%;*/
-/*    margin-left: 0%;*/
-/*    margin-bottom: 0%;*/
-/*    font-size: 40px;*!*/
-
-
-/*}*/
-
-/*footer {*/
-/*    position: relative;*/
-/*    !* Altura total del footer en px con valor negativo *!*/
-/*    margin-top: -50px;*/
-/*    height: 200px;*/
-/*    padding:5px 0px;*/
-/*    clear: both;*/
-/*    background-color: rgb(9, 66, 147);*/
-/*   !* text-align: center;*!*/
-/*    color: #fff;*/
-/*}*/
-
-
-
-/*.pie{*/
-/*    text-decoration: none;*/
-/*    color: whitesmoke;*/
-/*    font-size:50px;*/
-/*    */
-/*    */
-/*  !*  text-align:center;*!*/
-
-
-/*}*/
-
-/*.imgFooter{*/
-/*    float: right;*/
-/*    margin-top: 0px;*/
-/*    margin-right: 50px;*/
-/*}*/
-/*.instagram{*/
-/*    height: 47px;*/
-/*}*/
 
 /*******************************Hasta aquí codigo de Isabel *************************************************************************************/
