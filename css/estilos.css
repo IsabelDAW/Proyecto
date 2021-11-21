@@ -1,11 +1,5 @@
-/*prueba*
+/***********************************************************/
 
-/*ID utilizadas por Isabel = ESLOGAN - LOGIN - CARRITO - INICIO*/
-
-@font-face {
-    font-family: "Raleway";
-    src: local("./fonts");
-}
 body{
     margin: 0;
     padding: 0;
@@ -34,6 +28,22 @@ body{
     justify-content: space-around;
     align-items: center;
 }
+
+
+.titulo{
+    text-align: center;
+    color: blue;
+    font-size: 150%;
+}
+.tituloCabecera{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 150%;
+
+}
+.margenes{
+    margin-left: 4%;
+}
 .containerHeaderCenter{
     width: 20%;
     flex-direction: row;
@@ -42,122 +52,6 @@ body{
     align-items: center;
     padding: 20px;
 }
-/*.containerHeaderEnd{*/
-/*    width: 10%;*/
-/*    display: flex;*/
-/*    justify-content: flex-end;*/
-/*    align-items: center;*/
-/*}*/
-
-.footer{
-    background-color: rgb(9, 66, 147);
-    width: 100%;
-    text-align: center;
-
-}
-#contenidoCentro {
-    display: flex;
-    width: 100%;
-}
-#contenido1{
-    width: 10%;
-    background-color: rgb(9, 66, 147);
-}
-#contenido2{
-    background-color: darkseagreen;
-    width: 90%;
-    padding: 1%;
-}
-
-/*Cambios en las imagenes imagenes*/
-#imgPortada{
-    width: 100%;
-    height: 500px;
-}
-
-#patinete{
-    width: 100%;
-    height: 400px;
-}
-/*css generales para añadir en un mismo div*/
-.titulo{
-    text-align: center;
-    color: whitesmoke;
-    font-size: 150%;
-}
-.margenes{
-    margin-left: 4%;
-}
-.end{
-    float: right;
-}
-/*cambios en las tablas*/
-.tablas{
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.novedades{
-    width: 90%;
-    height: 350px;
-
-}
-.formulario{
-
-    display: flex;
-    border: solid rgb(9, 66, 147);
-    justify-content: center;
-    font-size: large;
-    font-family: "Arial Black";
-    color: rgb(9, 66, 147);
-    margin-bottom: 10px;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.formulario1{
-
-}
-.mapa{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-}
-.mapa img{
-    width: 50%;
-}
-.mapa iframe{
-    width: 50%;
-}
-/*.mapaIframe, .imgMapa{*/
-/*    margin: 5px;*/
-
-/*}*/
-/*.mapaIframe #ifr, .imgMapa #map{*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*}*/
-/*.mapaIframe #ifr{*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*}*/
-.video{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-
-}
-
-
-
-
-/************************hasta aqui codigo de Esteban*****************************************************/
 
 /* menu */
 #menu ul{
@@ -169,7 +63,7 @@ body{
 /* enlaces del menu */
 
 #menu ul a{
-display: block;
+display: block; /*sin esta posicion se superpone el menu desplegable a la palabra menu*/
 color: whitesmoke;
 text-decoration: none;
 font-size: 30px;
@@ -183,89 +77,154 @@ margin-left: 20px;
 
 #menu ul li a:hover{
     background: darkblue;
-}
-/*menu desplegable */
-#menu ul ul{
-    top:100%;
-    left:0;
-    padding: 0;
+
 }
 
 #menu ul ul li {
-    float: none;
-    width: 240px;
+    width: 240px; /*ancho del menu desplegable*/
     margin-top: 50px;
+    display:block;   /* evita que menu se ilumine horizontalmente al pasar el raton por encima*/
+
+
 }
 #menu ul ul a {
     line-height:120%;
     padding:10px 15px;
    }
- #menu ul li:hover {
-    display:block;
-   }
-/*Para desplegar el menu*/
-#menu:hover #menu-content{
-display:block;
 
-}
 .desplegar{
-    position: relative;
-    display: inline-block;
+    display: inline-block;/*sin esto la palabra menu se ilumina toda la barra en horizontal al pasar el raton por encima*/
 
 }
 .desplegar-content{
-    display: none;
-    position: absolute;
+    display: none; /*sin esto el menu no se pliega y se ven los enlaces sin color*/
+    position: absolute;/*sin esta posicion el menu desplegable se abre a lo ancho y tapa toda la pantalla*/
 
 }
 .desplegar:hover .desplegar-content {
-    display: block;
+    display: block; /*hace que el menú se desplegue en bloque*/
     background-color: rgb(9, 66, 147);
 
 }
+#contenidoCentro {
+    display: flex;
+    width: 100%;
+}
+#contenido1{
+    width: 10%;
+    background-color: rgb(9, 66, 147);
+}
+#contenido2{
+    background-color: white;
+    width: 90%;
+    padding: 1%;
+}
+/*Cambios en las imagenes imagenes*/
+#imgPortada{
+    width: 100%;
+    height: 500px;
+}
+.secciones{
 
-.desplegar:hover .desplegar {
-    background-color: #3e8e41;
+    text-align: center;
+    color: blue;
+    font-size: 350%;
+
+}
+.grid-rows{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,350px);/*ancho columnas*/
+    grid-template-rows:    repeat(auto-fill,350px);/*largo columnas*/
+   place-content: center;
 }
 
-.servicios {
+.novedades{
+    width: 300px;
+    height: 300px;
+
+}
+
+
+.grid-rows-ofertas {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill,350px);/*ancho columnas*/
+    grid-template-rows:    repeat(auto-fill,350px);/*largo columnas*/
+    place-content: center;
+}
+.grid-rows-servicios{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,450px);/*ancho columnas*/
+    grid-template-rows:    repeat(auto-fill,200px);
+    place-content: center;
+}
+.video{
     width: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 10%;
-    justify-content: space-around;
+    margin-bottom: 30px;
 }
-/* Esteban--> modifique aqui un poco*/
+
 .servicios1{
-    width: 30%;
     background-color:gainsboro;
     border: 2px solid rgb(9, 66, 147);
-    padding: 20px;
+    /*padding: 20px;*/
     border-radius: 20px;
-    height: 200px;
-    line-height: 150%;
-    height: 100%;
-}
+    line-height: 100%;
+    text-align: center;
 
-.servicios2 {
-    width: 30%;
-    background-color: gainsboro;
-    border: 2px solid rgb(9, 66, 147);
-    padding: 20px;
-    border-radius: 20px;
-    height: 100%;
-    line-height: 150%;
+
 
 }
+.formulario{
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+    font-family: "Arial Black";
+    color: rgb(9, 66, 147);
+    align-content: center;
+
+}
+.formulario1{
+    display: flex;
+
+    border: solid rgb(9, 66, 147);
+    padding: 10px;
+    font-size: large;
+    font-family: "Arial black";
+    color: rgb(9, 66, 147);
+    }
+
+    .imagenFormulario{
+
+
+        text-align: center;
+        justify-content: center;
+        font-size: large;
+        font-family: "Arial Black";
+        color: rgb(9, 66, 147);
+
+    }
+    .imgform{
+        width: 100%;
+        height: 80%;
+    }
+    .mapa{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+    }
+    
 .condiciones{
     background: rgb(9, 66, 147);
    display: flex;
     justify-content: center;
     font-size: large;
     font-family: "Arial Black";
-
-
 }
 
 .condiciones1{
@@ -277,7 +236,11 @@ display:block;
 }
 
 .condiciones2{
+    background: rgb(9, 66, 147);
     display: flex;
+     justify-content: center;
+     font-size: large;
+     font-family: "Arial Black";
     align-items: center;
     margin-left: 10%;
     color: whitesmoke;
@@ -287,10 +250,12 @@ display:block;
     display: flex;
     align-items: center;
 }
+.mapa img{
+    width: 50%;/*Se va  a la derecha el mapa y deja mucho margen con la izquierda*/
+}
+.mapa iframe{
+    width: 50%;
+}
 
-/*********************************
- ESTEBAN -->  EL CODIGO ESTA COMENTADO POR LOS CAMBIOS QUE HICE Y CAMBIA ALGUNAS CLASES E IDS
- AL FINAL SE BORRARA PARA TENER MAS LIMPIO EL CODIGO
- ******************************/
 
-/*******************************Hasta aquí codigo de Isabel *************************************************************************************/
+
